@@ -1,0 +1,151 @@
+body {
+  background-color: #faedcd;
+  color: #333;
+  font-family: Book Antiqua, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  text-align: center;
+  max-width: 1046px;
+  margin: 0px auto; }
+
+a {
+  color: rgba(0, 0, 0, 0.7); }
+  a:focus, a:hover {
+    color: rgba(0, 0, 0, 0.6); }
+
+header svg.pure-heart-logo {
+  margin-bottom: 1rem;
+  width: 10rem;
+  margin: auto;
+  text-align: center;
+  display: block; }
+
+header {
+  margin: 0;
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  text-align: justify;
+  min-height: 100px; }
+
+header div#main-menu {
+  display: block;
+  padding: 0;
+  z-index: 1;
+  background-color: #f2f2f2;
+  width: 100%;
+  border-radius: 3px;
+  text-align: left;
+  font-family: 'Oswald', Georgia, sans-serif;
+  font-size: 1.3em;
+  text-decoration: none; }
+  header div#main-menu:focus, header div#main-menu:hover {
+    color: red; }
+
+header:hover div#main-menu {
+  display: block; }
+
+div#main-menu > ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0; }
+
+div#main-menu > ul > li {
+  display: block;
+  margin: 0 20px; }
+
+footer {
+  dispaly: block;
+  text-align: right; }
+
+footer p {
+  padding: 0 20px; }
+
+content {
+  display: block;
+  width: auto;
+  margin: 0px auto;
+  text-align: justify; }
+
+content div#left-menu {
+  float: none;
+  width: 100%; }
+
+div#left-menu > ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0 10px 0 10px; }
+
+div#left-menu > ul > li {
+  font-size: 120%;
+  margin: 0 0 5px 0; }
+
+div#left-menu > h3 {
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center; }
+
+content {
+  overflow: hidden;
+  margin: 0 0 20px 0; }
+
+content div#main {
+  float: none;
+  width: 100%; }
+
+div#main > p {
+  margin: 0 15px 0.5em 15px; }
+
+div#main div p {
+  margin: 0 0 0.5em 0; }
+
+div#main h3 {
+  margin: 1em 15px; }
+
+div#main h2 {
+  font-size: 25px;
+  text-align: center; }
+
+content div#main div {
+  margin: 20px 5px;
+  padding: 10px;
+  border-radius: 5px; }
+
+content div#main div > h3 {
+  font-weight: bold;
+  font-size: 120%;
+  margin: 5px 0; }
+
+div#main h1#main-title {
+  padding: 0 5px; }
+
+div#main p#subtitle {
+  text-transform: uppercase;
+  padding: 0 5px; }
+
+content div#definition {
+  background-color: #f4a261; }
+
+content div#etiology {
+  background-color: #e76f51; }
+
+content div#cure {
+  background-color: #b7e4c7; }
+
+.dotunder {
+  text-emphasis-style: dot;
+  text-emphasis-position: under left;
+  -webkit-text-emphasis-style: dot;
+  -webkit-text-emphasis-position: under; }
+
+@media only screen and (min-width: 720px) {
+  div#main-menu > ul > li {
+    display: inline; }
+  header {
+    min-height: 50px; }
+  content div#left-menu {
+    float: left;
+    width: 300px; }
+  content div#main {
+    float: right;
+    width: calc(100% - 300px); } }
