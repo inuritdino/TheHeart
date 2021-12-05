@@ -132,6 +132,15 @@ content div#etiology {
 content div#cure {
   background-color: #b7e4c7; }
 
+content div#main div.poem {
+  color: #A7260B;
+  font-style: italic;
+  text-align: center; }
+
+content div#main div.poem p {
+  margin: 0 20%;
+  padding: 0 0 10px 0; }
+
 .dotunder {
   text-emphasis-style: dot;
   text-emphasis-position: under left;
