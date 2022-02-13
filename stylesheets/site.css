@@ -67,15 +67,20 @@ content {
   text-align: justify; }
 
 content div#left-menu {
-  float: none;
-  width: 100%; }
+  display: block; }
 
-div#left-menu > ul {
+div#left-menu div#disease-list {
+  display: none; }
+
+div#left-menu:hover #disease-list {
+  display: block; }
+
+div#disease-list > ul {
   text-align: center;
   list-style-type: none;
   padding: 0 10px 0 10px; }
 
-div#left-menu > ul > li {
+div#disease-list > ul > li {
   font-size: 120%;
   margin: 0 0 5px 0; }
 
@@ -148,6 +153,10 @@ content div#main div.poem p {
   -webkit-text-emphasis-position: under; }
 
 @media only screen and (min-width: 720px) {
+  content div#left-menu div#disease-list {
+    display: block;
+    float: none;
+    width: 100%; }
   div#main-menu > ul > li {
     display: inline; }
   header {
