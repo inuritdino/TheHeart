@@ -66,29 +66,42 @@ content {
   margin: 0px auto;
   text-align: justify; }
 
-content div#left-menu {
-  display: block; }
-
-div#left-menu div#disease-list {
-  display: none; }
-
-div#left-menu:hover #disease-list {
-  display: block; }
-
-div#disease-list > ul {
+div#left-menu > ul {
   text-align: center;
   list-style-type: none;
   padding: 0 10px 0 10px; }
 
-div#disease-list > ul > li {
+div#left-menu > ul > li {
   font-size: 120%;
   margin: 0 0 5px 0; }
 
-div#left-menu > h3 {
+div#left-menu label {
   padding: 0 5px;
   font-weight: bold;
   font-size: 120%;
-  text-align: center; }
+  text-align: center;
+  display: block; }
+
+div#left-menu h3 {
+  padding: 0 5px;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+  display: block; }
+
+div#left-menu ul,
+div#left-menu input,
+div#left-menu .closer,
+div#left-menu .alwaysopen,
+div#left-menu input:checked ~ .opener {
+  display: none; }
+
+div#left-menu input:checked ~ ul,
+div#left-menu input:checked ~ .closer {
+  display: block; }
+
+div#left-menu > label {
+  cursor: pointer !important; }
 
 content {
   overflow: hidden;
@@ -153,10 +166,12 @@ content div#main div.poem p {
   -webkit-text-emphasis-position: under; }
 
 @media only screen and (min-width: 720px) {
-  content div#left-menu div#disease-list {
-    display: block;
-    float: none;
-    width: 100%; }
+  div#left-menu .alwaysopen,
+  div#left-menu ul {
+    display: block; }
+  div#left-menu input,
+  div#left-menu label {
+    display: none; }
   div#main-menu > ul > li {
     display: inline; }
   header {
