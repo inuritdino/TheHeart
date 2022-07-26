@@ -117,6 +117,9 @@ div#main > p {
 div#main div p {
   margin: 0 0 0.5em 0; }
 
+div#main ol li p {
+  margin: 0 15px 0.5em 15px; }
+
 div#main h3 {
   margin: 1em 15px; }
 
